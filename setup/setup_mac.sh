@@ -89,18 +89,18 @@ installcask android-file-transfer
 installcask iterm2
 installcask qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package && qlmanage -r
 
-# Postgres 9 Database
-brew install postgres
-installcask pgadmin3
-# ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
-# launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
-psql postgres -c 'CREATE EXTENSION "adminpack";'
-sudo gem install pg
+# # Postgres 9 Database
+# brew install postgres
+# installcask pgadmin3
+# # ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+# # launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+# psql postgres -c 'CREATE EXTENSION "adminpack";'
+# sudo gem install pg
 
-# PG tools needed for every other project:
-brew tap osgeo/osgeo4mac
-brew install gdal
-brew install postgis
+# # PG tools needed for every other project:
+# brew tap osgeo/osgeo4mac
+# brew install gdal
+# brew install postgis
 
 # Fonts
 brew tap caskroom/fonts
@@ -114,21 +114,21 @@ sudo pip install -r requirements.pip
 #                       Data Stores                                            #
 ################################################################################
 
-brew install mysql
-brew install mongo
-brew install redis
-brew install elasticsearch
+# brew install mysql
+# brew install mongo
+# brew install redis
+# brew install elasticsearch
 
 ################################################################################
 #                           Dev tools                                          #
 ################################################################################
 
 installcask install virtualbox
-installcask install vagrant
+# installcask install vagrant
 installcask install postman
 
 # New Docker for Mac. For older version run `brew install docker`
-installcask install docker
+# installcask install docker
 
 brew install diff-so-fancy
 brew link xz && brew install weechat
